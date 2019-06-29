@@ -1,6 +1,6 @@
 # CpcDos_Demos
 
-## Preparation
+## Préparation
 
 #### Option 1
 -Installer [ToirtoiseGit](https://tortoisegit.org/download/) pour faire un "pull" des futur updates.

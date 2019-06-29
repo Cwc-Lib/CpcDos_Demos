@@ -1,7 +1,10 @@
 # CpcDos_Demos
 
 ## Comment compiler
--Faire un clone de [Cwc](https://github.com/VLiance/Cwc.git). Installer [ToirtoiseGit](https://tortoisegit.org/download/) de préférence et faire un pull pour les futur updates.
+-Faire un clone de [Cwc](https://github.com/VLiance/Cwc.git). 
+
+Installer [ToirtoiseGit](https://tortoisegit.org/download/) de préférence et faire un pull pour les futur updates.
+
 -Sinon, prendre la dernière [Release de Cwc](https://github.com/VLiance/Cwc/releases)
 
 

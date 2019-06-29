@@ -3,7 +3,7 @@
 ### Installer Cwc
 
 #### Option 1
--Installer [TortoiseGit](https://tortoisegit.org/download/) pour faire un "pull" des futur updates.
+-Installer [TortoiseGit](https://tortoisegit.org/download/) pour faire un **_"pull"_** des futur updates.
 
 -Faire un clone de [Cwc](https://github.com/VLiance/Cwc.git). 
 

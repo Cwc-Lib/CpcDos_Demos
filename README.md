@@ -1,6 +1,6 @@
 # CpcDos_Demos
 
-## Préparation
+## Comment Compiler
 
 #### Option 1
 -Installer [ToirtoiseGit](https://tortoisegit.org/download/) pour faire un "pull" des futur updates.
@@ -10,7 +10,7 @@
 #### Option 2
 -Prendre la dernière [Release de Cwc](https://github.com/VLiance/Cwc/releases)
 
-## Compiler
+***
 
 -Lancer Cwc.exe, lors de la première utilisation les fichiers **.cwMake** seront associés. *Le menu "Config/Set cwc" permet la même chose.*
 

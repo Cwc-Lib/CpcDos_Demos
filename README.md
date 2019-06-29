@@ -2,12 +2,12 @@
 
 ## Preparation
 
-### Option 1
+#### Option 1
 -Installer [ToirtoiseGit](https://tortoisegit.org/download/) pour faire un "pull" des futur updates.
 
 -Faire un clone de [Cwc](https://github.com/VLiance/Cwc.git). 
 
-### Option 2
+#### Option 2
 -Prendre la dernière [Release de Cwc](https://github.com/VLiance/Cwc/releases)
 
 ## Compiler

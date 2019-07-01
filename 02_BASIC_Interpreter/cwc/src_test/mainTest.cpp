@@ -562,6 +562,8 @@ static char* _load_file(const char* path) {
 		return (char*)fCpcDos_LoadFile((gzUInt8*)path);
 	}
 	
+	printf("\nWindows Load file...");
+	
 	FILE* fp = 0;
 	char* result = 0;
 	long curpos = 0;
@@ -1624,15 +1626,18 @@ gzInt Main(gzText8 _sArg, gzUIntX _nId, gzInt _nCmd){
 	printf("\nCpcDos BASIC Interpreter!");
 	const char* argv[] = { "myprog", "LOAD", "sample02.bas",  NULL };
 	
+	printf("\n Args: %s %s \n\n ------------------------------- \n", argv[1], argv[2]);
+	
+	
+	
 	int argc = sizeof(argv)/ sizeof(char*) - 1;
 
 	atexit(_on_exit);
-
+/*
 	if(setjmp(mem_failure_point)) {
-		_printf("Error: out of memory.\n");
-
+		_printf("\nError: out of memory.\n");
 		exit(1);
-	}
+	}*/
 
 	_on_startup();
 

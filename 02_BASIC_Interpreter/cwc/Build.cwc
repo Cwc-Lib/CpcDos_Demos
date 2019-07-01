@@ -1,0 +1,11 @@
+;Build My-basic
+-c ../core/ -o obj/cpp_{_sPlatform}_{_sOpt}/core/
+>
+;Build Main
+-c src_test/ -o obj/cpp_{_sPlatform}_{_sOpt}/
+>
+;Copy samples files
+-#Copy sample/ _out/{_sPlatform}_{_sOpt}/
+>
+;Generate executable
+-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*

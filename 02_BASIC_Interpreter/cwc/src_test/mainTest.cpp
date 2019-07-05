@@ -1615,36 +1615,49 @@ static void _on_exit(void) {
 #endif /* __cplusplus */
 
 
+#define argvSize (sizeof(argv)/ sizeof(char*)-1)
 
 ////////////////////////////////////////////
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-
 
 gzInt Main(gzText8 _sArg, gzUIntX _nId, gzInt _nCmd){
 	
-	printf("\nCpcDos BASIC Interpreter!");
-	const char* argv[] = { "myprog", "LOAD", "sample02.bas",  NULL };
+	printf("\n--- CpcDos BASIC Interpreter ---\n");
 	
-	printf("\n Args: %s %s \n\n ------------------------------- \n", argv[1], argv[2]);
+	//! Force Args !// -- TODO USE CommandLineToArgvW function like with _sArg to get argv & argc
+	 
+	//const char* argv[] = { "myprog", "LOAD", "sample02.bas",  NULL };
+	const char* argv[] = { "",  NULL }; //Use Interactive mode
 	
+	int argc = argvSize;
+	if(argvSize > 2){
+		printf("\n Args: %s %s \n\n ------------------------------- \n", argv[1], argv[2]);
+	}
+	/////////////////
 	
-	
-	int argc = sizeof(argv)/ sizeof(char*) - 1;
-
 	atexit(_on_exit);
-/*
+	
+	/* Require setjump implementation 
 	if(setjmp(mem_failure_point)) {
 		_printf("\nError: out of memory.\n");
 		exit(1);
 	}*/
-
+	
 	_on_startup();
 
 	if(argc >= 2) {
 		if(!_process_parameters(argc, (char **)argv))
 			argc = 1;
 	}
+	if(argc == 1) {
+		int status = 0;
+		_show_tip();
+		do {
+			status = _do_line();
+		} while(_NOT_FINISHED(status));
+	}
+	
 	
 	return 0; // 1 Still Alive, 0 Stop, < 0 Errors
 }

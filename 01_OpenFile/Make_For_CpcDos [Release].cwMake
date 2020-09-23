@@ -3,3 +3,6 @@
 -{_sOpt}="O2"
 >
 -#Run Build.cwc -{_wToolchain}= VLianceTool/CpcDosRT
+>
+-#Run
+>

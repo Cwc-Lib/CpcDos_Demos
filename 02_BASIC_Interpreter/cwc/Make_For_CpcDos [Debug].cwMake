@@ -3,3 +3,6 @@
 -{_sOpt}="Debug"
 >
 -#Run Build.cwc -{_wToolchain}= VLianceTool/CpcDosRT
+>
+-#Run
+>
